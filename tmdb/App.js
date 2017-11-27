@@ -64,7 +64,7 @@ export default class App extends React.Component {
       console.log(json.results[0])
       this.setState({
         movie: json.results[0],
-        movieNameInput: null 
+        movieNameInput: null
       })
     });
   }
@@ -76,8 +76,7 @@ export default class App extends React.Component {
                    placeholder="Enter a movie name!"
                    placeholderTextColor="#aaa"
                    onChangeText={(text) => this.movieInput(text)}
-                   onSubmitEditing={() => this.movieNameInputSubmitted()}
-                   />
+                   onSubmitEditing={() => this.movieNameInputSubmitted()} />
         {this.state.movie && <Movie movie = {this.state.movie} />}
       </View>
     );
