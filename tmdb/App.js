@@ -63,7 +63,8 @@ export default class App extends React.Component {
     fetch(url).then(response => response.json()).then(json => {
       console.log(json.results[0])
       this.setState({
-        movie: json.results[0]
+        movie: json.results[0],
+        movieNameInput: null 
       })
     });
   }
