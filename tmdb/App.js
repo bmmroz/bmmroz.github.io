@@ -63,8 +63,8 @@ export default class App extends React.Component {
     fetch(url).then(response => response.json()).then(json => {
       console.log(json.results[0])
       this.setState({
+        //movieNameInput: '', this would not work but i tried to get the input field to clear several times with no luck
         movie: json.results[0],
-        movieNameInput: ""
       })
     });
   }
