@@ -64,7 +64,7 @@ export default class App extends React.Component {
       console.log(json.results[0])
       this.setState({
         movie: json.results[0],
-        movieNameInput: null
+        movieNameInput: ""
       })
     });
   }
